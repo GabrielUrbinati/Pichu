@@ -43,7 +43,8 @@ Abra o terminal e execute:
 ```
 xdg-open index.html  # Linux
 start index.html     # Windows
-open index.html      # Mac```
+open index.html      # Mac
+```
 
 
 
