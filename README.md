@@ -20,3 +20,32 @@ Este repositório contém o código-fonte da landing page oficial do **EchoFest 
 │── style.css          # Arquivo de estilos
 │── imagens/           # Pasta para imagens do festival
 └── README.md          # Documentação do projeto
+
+
+## 🎯 Como Rodar o Projeto  
+
+### 📌 1. Clone este repositório  
+
+Abra o terminal e execute:  
+
+```bash
+git clone https://github.com/seu-usuario/echofest-website.git
+
+### 📌 2. Acesse a pasta do projeto  
+
+```bash
+cd echofest-website
+
+### 📌 3. Abra o arquivo Index 
+
+```
+xdg-open index.html  # Linux
+start index.html     # Windows
+open index.html      # Mac'''
+
+
+
+
+
+
+
