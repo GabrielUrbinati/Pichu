@@ -45,7 +45,27 @@ xdg-open index.html  # Linux
 start index.html     # Windows
 open index.html      # Mac
 ```
+## 📝 Contribuindo
 
+Contribuições são sempre bem-vindas! Se você quiser contribuir para o desenvolvimento deste projeto, siga as etapas abaixo:
+
+1. Faça o fork deste repositório.
+2. Crie uma nova branch (`git checkout -b minha-nova-feature`).
+3. Faça as modificações desejadas e commit (`git commit -am 'Adiciona nova feature'`).
+4. Envie para o repositório remoto (`git push origin minha-nova-feature`).
+5. Abra um pull request explicando suas alterações.
+
+## 💬 Licença
+
+Este projeto está licenciado sob a licença MIT - veja o arquivo [LICENSE](LICENSE) para mais detalhes.
+
+## 👨‍💻 Desenvolvedor
+
+Este projeto foi desenvolvido por **Seu Nome**. Você pode me encontrar nas redes sociais: [LinkedIn](https://www.linkedin.com/in/seu-linkedin), [GitHub](https://github.com/seu-usuario).
+
+---
+
+Obrigado por usar o EchoFest 2025!
 
 
 
