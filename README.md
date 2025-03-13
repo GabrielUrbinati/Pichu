@@ -14,8 +14,8 @@ Este repositório contém o código-fonte da landing page oficial do **EchoFest 
 
 ## 📂 Estrutura do Projeto  
 
-```
-/echofest-website
+
+```/echofest-website
 │── index.html         # Página principal do site
 │── style.css          # Arquivo de estilos
 │── imagens/           # Pasta para imagens do festival
@@ -28,8 +28,8 @@ Este repositório contém o código-fonte da landing page oficial do **EchoFest 
 
 Abra o terminal e execute:  
 
-```
-git clone https://github.com/seu-usuario/echofest-website.git```
+
+```git clone https://github.com/seu-usuario/echofest-website.git```
 
 ### 📌 2. Acesse a pasta do projeto  
 
