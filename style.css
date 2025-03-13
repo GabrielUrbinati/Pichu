@@ -1,0 +1,509 @@
+/* Reseta as margens, padding e define box-sizing pra todos os elementos */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+/* estilo geral para o body */
+body{
+    font-family: 'Anton', sans-serif; /* ou 'Anton', dependendo da sua escolha */
+    height: 100%; /* Garantir que o body ocupe a altura total da tela */
+    background-image:url('echofest.jpeg'); /* Imagem de fundo */
+    background-size: cover; /* Faz a imagem cobrir toda a tela */
+    background-attachment: fixed; /* Faz com que a imagem de fundo fique fixa enquanto você rola a página */
+    color:rgba(0,0,0,0.9);
+}
+
+/* estilos do menu */
+#menu{
+    position:fixed;
+    padding:10px 20px;
+    width:100%;
+    top:0;
+    left:0;
+    z-index:10;
+    background: rgba(0, 0, 0, 0.9);
+    list-style:none;
+    
+}
+
+#menu a{
+    text-decoration:none;
+    color:bisque;
+    font-size:20px;
+
+}
+#menu ul li p{
+    color:bisque;
+}
+/*  ajustando para o menu fixo */
+section {
+    position: relative;
+    z-index: 1; /* Coloca o conteúdo acima do menu */
+    padding-top: 60px; /* Ajuste o valor com base na altura do seu menu fixo */
+}
+#menu a:hover{
+    background-color: rgba(255, 255, 255, 0.2);;
+    transform:scale(1.05);
+}
+
+/* container do menu */
+.menu{
+    list-style:none;
+    display:flex;
+    justify-content:flex-end;
+    gap:20px;
+    width:100%;
+}
+.left-item {
+    flex-shrink: 0; /* Impede que o item da esquerda encolha */
+    margin-right: 30px; /* Aumenta o espaço entre o texto e o menu */
+    color:white;
+    display:flex;
+    flex-direction:row;
+    font-size:20px;
+   
+
+}
+
+/*oculto inicialmente */
+.submenu {
+    display: block; /* garante que ele ocupe espaço todo da linha */
+    position: absolute;
+    background: rgba(0, 0, 0, 0.9);
+    list-style: none;
+    top: 100%;
+    right: 0;
+    width: auto;
+    min-width: 200px;
+    text-align: left;
+    padding: 0; 
+    overflow: hidden; /* impede que o conteúdo fique visível antes de ser animado */
+    height: 0; /* começa   com a altura zero */
+    opacity: 0; /* Começa com opacidade zero */
+    transition: height 0.5s ease, opacity 0.3s ease; /* adiciona transiçao suave para altura e opacidade */
+    font-size:20px;
+}
+
+
+.submenu li {
+    padding:10px 20px;
+    display:flex;
+    flex-direction:column;
+}
+
+.submenu a{
+    text-decoration:none;
+    color:white;
+    display:block;
+    padding:10px;
+}
+
+.menu li:hover .submenu {
+    height: auto; 
+    opacity: 2; /* submenu visível */
+    padding: 10px 0; /* adiciona mais padding quando expandido */
+}
+.menu li{
+    position: relative;
+    flex: 1;
+    text-align: center;
+   
+
+}
+
+.menu li:hover .submenu{
+    display:block;
+}
+
+#titulo h1{
+    margin-top:90px;
+    margin-bottom:40px;
+    text-align:center;
+    font-family:'Playfair Display',serif;
+    font-size:60px;
+    color:rgba(0, 0, 0, 0.8);
+    padding:20px;
+    word-spacing:30px;
+    font-weight: 150;
+    margin-top:30px;
+    
+}
+#titulo ul{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    list-style:none;
+    gap:20px;
+}
+#titulo ul li{
+    width:187px;
+    height:37px;
+    background:rgba(0,0,0,0.6);
+    display:flex;
+    color:bisque;
+    justify-content:center;
+    border-radius: 20px; 
+    box-shadow: 5px 5px 0px black; 
+    align-items:center;
+    
+
+
+
+}
+#titulo ul li a{
+    text-decoration: none;
+    color:bisque;
+}
+#titulo ul li:hover {
+    
+    background-color: rgba(0, 0, 0, 0.9);
+    transform: scale(1.7); /* aplica a transição de escala - aumenta tamanho*/
+    color:bisque;
+}
+#titulo{
+    display:flex;
+    flex-direction: column;
+
+}
+#botaoFixo {
+    position: fixed;
+    width: 120px;
+    height: 120px;
+    top: 70px; 
+    right: 20px; 
+    border-radius: 50%;
+    background-color:rgba(0, 0, 0, 0.1);
+    color:rgba(0,0,0,0.7);
+    font-size: 20px;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.8);
+    transition: all 0.3s ease;
+    font-family: 'Anton', sans-serif;
+    z-index: 1000;
+    animation: floating 2s infinite ease-in-out; /* animação de flutuação */
+}
+
+@keyframes floating {
+    0% {
+        transform: translateY(0); /* começa sem mexer */
+    }
+    50% {
+        transform: translateY(-10px); /* move para cima */
+    }
+    100% {
+        transform: translateY(0); /* volta ao começo */
+    }
+}
+
+#botaoFixo:hover {
+    background-color: rgba(0, 0, 0, 0.9);
+    transform: scale(1.7); 
+    color:bisque;
+}
+
+#botaoFixo:focus {
+    outline: none;
+    background-color: rgb(0, 0, 0);
+    transform: scale(1.7);
+}
+#lineupDia{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:80px;
+    font-size:2rem;
+    color:rgba(0,0,0,0.7);
+
+}
+
+
+#lineup{
+    display:flex;
+    justify-content:center;
+}
+#lineup img {
+    
+    transform: scale(0.85); /* reduz a imagem para 95% do seu tamanho original */
+    
+}
+
+/* CONTAINER VIP*/
+#VIP{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
+    padding:40px 20px;
+    align-items: center;
+
+}
+/* basicao*/
+#VIP article{
+    text-align:center;
+    width:250px;
+    height:250px;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:space-between;
+    border-radius:15px;
+    overflow:hidden;
+    padding:10px;
+    box-shadow:0px 4px 8px rgba(0,0,0,0.2);
+    font-size:20px;
+}
+
+#VIP article:hover{
+    transform: scale(1.2); /*   pra aumentar q nem os botoes */
+    
+    
+}
+
+
+#VIP img{
+    width:100%;
+    height:200px;
+    object-fit: cover;
+    border-radius:10px;
+}
+
+#VIP article p a{
+    text-decoration:none;
+    color:rgba(0,0,0,0.7);
+}
+
+/* efeito parralax scroll*/
+.parallax{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    overflow: hidden;
+    position:relative;
+    width:100%;
+    height:500px;
+    background-image:url('festival.jpg');
+    background-size:cover;/*garante que cubra todo o container*/
+    background-position:center;/*mantem focado no meio*/
+    background-attachment:fixed; /* aqui fixa a imagem de fundo pra scrollar e continuar parada*/
+    font-family:'Playfair Display',serif;
+}
+
+.parallax-content{
+    font-size: 2rem;
+    font-weight: bold;
+    color:rgba(0,0,0,0.90);
+    text-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+    
+}
+
+
+
+/* Container do form */
+form {
+    display: flex;
+    flex-direction: row; 
+    gap: 20px;
+    border-radius: 10px;
+    padding: 20px;
+    width: 50%;
+    margin: 20px auto;
+    max-width: 900px;
+    align-items: center;
+    justify-content: center;
+    font-size:17px;
+}
+
+/*  container de contato */
+#contato {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    justify-content: center;
+    margin: 20px auto 0;
+    width: 330px;
+    height: 170px;
+    border-radius: 30px;
+    box-shadow: 5px 5px 0px black;
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 20px;
+   
+}
+
+/* Estilos do label e do input em linha */
+
+
+
+#submit {   
+    background-color: rgba(0,0,0,0.2); 
+    color: black;
+    font-family: 'Anton', sans-serif;
+    font-size: 16px;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 20px; 
+    box-shadow: 5px 5px 0px black; 
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    position: relative;
+    
+
+    
+}
+#submit:hover {
+    transform: scale(1.05); /* Faz o botão crescer levemente no hover */
+}
+
+
+
+/* Para o checkbox */
+.checkbox {
+    border-radius: 17px;
+}
+
+
+
+/* Estilo geral para o botão */
+
+.linkPreto{
+    color:black;
+}
+.linkPreto:hover{
+    color:rgba(0,0,0,0.7);
+}
+
+
+footer{
+    display:flex;
+    flex-direction:row;
+    justify-content: space-between;
+    margin-left:200px;
+   
+
+}
+/* Para telas menores que 1100px (Tablets grandes) */
+@media screen and (max-width: 1100px) {
+    #titulo h1 {
+        font-size: 50px;
+        word-spacing: 15px;
+    }
+
+    #titulo ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    #VIP {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    #VIP article {
+        width: 250px;
+    }
+
+    #menu {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+/* Para telas menores que 900px (Tablets médios) */
+@media screen and (max-width: 900px) {
+    #menu {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .menu {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    #titulo h1 {
+        font-size: 40px;
+    }
+
+    #botaoFixo {
+        width: 100px;
+        height: 100px;
+        font-size: 16px;
+    }
+
+    #VIP article {
+        width: 220px;
+    }
+}
+
+/* Para telas menores que 720px (Celulares grandes) */
+@media screen and (max-width: 720px) {
+    #titulo h1 {
+        font-size: 35px;
+        text-align: center;
+    }
+
+    #titulo ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #VIP {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #VIP article {
+        width: 90%;
+    }
+
+    #botaoFixo {
+        width: 80px;
+        height: 80px;
+        font-size: 14px;
+    }
+
+    form {
+        width: 90%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #menu {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+/* Para telas menores que 480px (Celulares pequenos) */
+@media screen and (max-width: 480px) {
+    #menu {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    #titulo h1 {
+        font-size: 30px;
+        word-spacing: 10px;
+    }
+
+    #botaoFixo {
+        width: 70px;
+        height: 70px;
+        font-size: 12px;
+    }
+
+    footer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+}
