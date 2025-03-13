@@ -29,16 +29,16 @@ Este repositório contém o código-fonte da landing page oficial do **EchoFest 
 Abra o terminal e execute:  
 
 ```bash
-git clone https://github.com/seu-usuario/echofest-website.git
+git clone https://github.com/seu-usuario/echofest-website.git'''
 
 ### 📌 2. Acesse a pasta do projeto  
 
 ```bash
-cd echofest-website
+cd echofest-website'''
 
 ### 📌 3. Abra o arquivo Index 
 
-```
+```bash
 xdg-open index.html  # Linux
 start index.html     # Windows
 open index.html      # Mac'''
