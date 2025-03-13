@@ -14,12 +14,12 @@ Este repositório contém o código-fonte da landing page oficial do **EchoFest 
 
 ## 📂 Estrutura do Projeto  
 
-```bash
+```
 /echofest-website
 │── index.html         # Página principal do site
 │── style.css          # Arquivo de estilos
 │── imagens/           # Pasta para imagens do festival
-└── README.md          # Documentação do projeto bash´´´
+└── README.md          # Documentação do projeto bash```
 
 
 ## 🎯 Como Rodar o Projeto  
@@ -28,20 +28,20 @@ Este repositório contém o código-fonte da landing page oficial do **EchoFest 
 
 Abra o terminal e execute:  
 
-```bash
-git clone https://github.com/seu-usuario/echofest-website.git´´´
+```
+git clone https://github.com/seu-usuario/echofest-website.git```
 
 ### 📌 2. Acesse a pasta do projeto  
 
-```bash
-cd echofest-website´´´
+```
+cd echofest-website```
 
 ### 📌 3. Abra o arquivo Index 
 
-```bash
+```
 xdg-open index.html  # Linux
 start index.html     # Windows
-open index.html      # Mac´´´
+open index.html      # Mac```
 
 
 
