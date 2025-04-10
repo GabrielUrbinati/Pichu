@@ -10,7 +10,7 @@ Este repositório contém o código-fonte da landing page oficial do **EchoFest 
 
 - **HTML5** 🎨  
 - **CSS3** ✨  
-- **JavaScript (se necessário)** 🛠  
+- **JavaScript** 🛠  
 
 ## 📂 Estrutura do Projeto  
 
