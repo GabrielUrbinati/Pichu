@@ -2,7 +2,7 @@
 
 Este repositório contém o código-fonte da landing page oficial do **EchoFest 2025**, um festival de música imperdível!  
 
-## 📸 Preview  
+
 
 ![EchoFest](festival.jpg)  
 
