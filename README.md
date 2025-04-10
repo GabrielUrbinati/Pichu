@@ -61,7 +61,10 @@ Este projeto está licenciado sob a licença MIT - veja o arquivo [LICENSE](LICE
 
 ## 👨‍💻 Desenvolvedor
 
-Este projeto foi desenvolvido por **Seu Nome**. Você pode me encontrar nas redes sociais: [LinkedIn](https://www.linkedin.com/in/seu-linkedin), [GitHub](https://github.com/seu-usuario).
+Este projeto foi desenvolvido por Danilo Gigliotti, Gabriel Branco e Gabriel Palacios
+
+## Tutorial 
+Para ver como fizemos, acesse o tutorial.pdf.
 
 ---
 
