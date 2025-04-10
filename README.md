@@ -32,7 +32,7 @@ Este repositório contém o código-fonte da landing page oficial do **EchoFest 
 Abra o terminal e execute:  
 
 
-```git clone https://github.com/seu-usuario/echofest-website.git```
+```git clone https://github.com/GabrielUrbinati/Pichu.git```
 
 ### 📌 2. Acesse a pasta do projeto  
 
