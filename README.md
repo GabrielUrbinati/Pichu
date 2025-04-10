@@ -1,6 +1,6 @@
 # 🎶 EchoFest 2025 - Website - Projeto Pichu
 
-Este repositório contém o código-fonte da landing page oficial do **EchoFest 2025**, um festival de música imperdível!  
+Este repositório contém o código-fonte do website oficial do **EchoFest 2025**, um festival de música imperdível!  
 
 
 
